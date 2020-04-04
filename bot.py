@@ -11,4 +11,4 @@ def start(message):
 def hello(message):
     bot.send_message(message.chat.id, 'Привет, {name}. Рад тебя видеть.'.format(name=message.text))
  
-bot.polling(none_stop=True, interval=0)
+bot.infinity_polling(True)
